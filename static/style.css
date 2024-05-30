@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+}
+
+li {
+    width: 200px;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 6px;
+    display: inline-block;
+    list-style-type: none;
+    background-color: gold;
+    color: blue;
+}
+
+.asia {
+    background-color: aqua;
+    padding: 6px;
+    margin: 12px;
+}
+
+table {
+    background-color: blanchedalmond;
+    width: 80%;
+    margin: 0 auto;
+}
+
+th {
+    font-size: 24px;
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股市資訊</title>
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+
+<body>
+    <h1 class="asia">亞股資訊</h1>
+    <h3>{{datetime}}</h3>
+    {% for stock in stocks %}
+    <li><b>{{stock['分類']}}-{{stock['指數']}}</b></li>
+    {% endfor %}
+</body>
+
+</html>
