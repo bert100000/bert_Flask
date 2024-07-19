@@ -1,6 +1,7 @@
 from flask import Flask,render_template,request
 from datetime import datetime
 from pm25 import get_pm25
+import json
 
 app = Flask(__name__)
 
@@ -13,9 +14,33 @@ def pm25():
             columns,values = get_pm25(True)
         else:
             columns,values = get_pm25()
+        
+    print(columns,values)
     
     return render_template('pm25.html',**locals())
 
+
+@app.route('/pm25-charts')
+def pm25_charts():
+
+    return render_template('./pm25_chart.html')
+
+
+@app.route('/pm25-data',methods=['POST'])
+def get_pm25_data():
+    columns,values = get_pm25()
+
+    county = [value[1] for value in values]
+    site = [value[0] for value in values ]
+    pm25 = [value[2] for value in values]
+
+    datas={
+        'county':county,
+        'site':site,
+        'pm25':pm25
+    }
+
+    return json.dumps(datas,ensure_ascii=False)
 
 @app.route('/')
 def index():
