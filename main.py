@@ -42,6 +42,7 @@ def get_pm25_data():
 
     return json.dumps(datas,ensure_ascii=False)
 
+
 @app.route('/')
 def index():
     date=get_date()
