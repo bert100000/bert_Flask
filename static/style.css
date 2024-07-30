@@ -30,3 +30,9 @@ th {
     background-color: black;
     color: white;
 }
+
+.has-background-primary {
+    width: 20px;
+    height: 50px;
+    border-radius: 5px;
+}

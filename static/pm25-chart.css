@@ -1,0 +1,17 @@
+h1 {
+    font-size: 30px;
+}
+
+.has-background-primary-dark {
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.has-background-info-light {
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: 15px;
+    font-size: 20px;
+}

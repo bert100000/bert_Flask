@@ -6,13 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <link rel="stylesheet" href="../static/pm25-chart.css">
     <title>Document</title>
 
 </head>
 
 <body>
-    <h1>PM2.5圖形繪製</h1>
-    <a href="/">回首頁</a>
+    <h1><b>全台PM2.5圖形相關資訊</b></h1>
+    <a href="/">回首頁</a><br><br>
+
+    <p>
+        <span class="has-background-primary-dark has-text-warning-light">N/A</span>&nbsp;&nbsp;
+        <span class="has-background-info-light has-text-danger ">PM2.5:數值</span>
+    </p><br>
+    <p>
+        <span class="has-background-primary-dark has-text-warning-light">N/A</span>&nbsp;&nbsp;
+        <span class="has-background-info-light has-text-danger ">PM2.5數值</span>
+    </p><br>
+
+    <p>
+        更新時間:取得中....
+    </p><br>
+    <button class="button">
+        更新資料
+    </button><br>
+
     <div id="main" style="width:800px;height:400px;"></div>
     <script src="../static/pm25-chart.js"></script>
 
